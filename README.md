@@ -120,6 +120,8 @@ Dentro do repositório existe uma collection do Postman para executar alguns tes
 
 A configuração default usa uma base de dados in-memory (H2) que é populada com dados no startup da aplicação.
 
+## A aplicação contém testes unitários e testes de integração
+
 ## Trabalhando com craftbeer em sua IDE
 
 ### Pré-requisito
