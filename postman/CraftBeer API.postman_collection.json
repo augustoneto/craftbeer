@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "0a49666e-2e51-463a-a2b9-0e60e2ad8809",
+		"name": "CraftBeer API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/beers",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"beers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/beers/6",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"beers",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Beer test\",\r\n    \"ingredients\": \"Ingredients Beer test\",\r\n    \"alcoholContent\": \"8 %\",\r\n    \"price\": 15.7,\r\n    \"category\": \"Category Beer test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/beers",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"beers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Beer teste alterado\",\r\n        \"ingredients\": \"Ingredients Beer teste\",\r\n        \"alcoholContent\": \"8 %\",\r\n        \"price\": 16,\r\n        \"category\": \"Category Beer teste alterado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/beers/6",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"beers",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Beer 6 - Alterado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/beers/6",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"beers",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/beers/6",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"beers",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": "http://localhost:9000"
+		}
+	]
+}

@@ -1,2 +1,12 @@
+spring:
+  application:
+    name: "craftbeer"
+  datasource:
+    schema: classpath*:db/h2/schema.sql
+    data: classpath*:db/h2/data.sql
+  jpa:
+    hibernate:
+      ddl-auto: none
+
 server:
   port: 9000
