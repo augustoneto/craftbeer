@@ -94,6 +94,11 @@ Dica: Copie e cole o conteúdo do arquivo acima no [Swagger Editor](https://edit
 
 ## Seção reservada para que você descreva brevemente como executar o seu projeto
 
-Pode ser algo simples, como executar o arquivo Application.java. Ou talvez tenha alguma dependência como base de dados, por exemplo.
+## Rodando crafbeer local
 
-TODO
+```
+git clone https://github.com/augustoneto/craftbeer.git
+cd craftbeer
+./mvnw package
+java -jar target/*.jar
+```
