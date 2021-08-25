@@ -112,3 +112,7 @@ docker build --tag craftbeer-docker .
 docker run -p 9000:9000 craftbeer-docker
 ```
 
+Você pode acessar craftbeer aqui: http://localhost:9000/beers
+
+Dentro do repositório existe uma collection do Postman para executar alguns testes: https://github.com/augustoneto/craftbeer/tree/master/postman
+
