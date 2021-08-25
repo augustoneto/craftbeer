@@ -94,6 +94,41 @@ Dica: Copie e cole o conteúdo do arquivo acima no [Swagger Editor](https://edit
 
 ## Seção reservada para que você descreva brevemente como executar o seu projeto
 
-Pode ser algo simples, como executar o arquivo Application.java. Ou talvez tenha alguma dependência como base de dados, por exemplo.
+## Rodando crafbeer local
 
-TODO
+```
+git clone https://github.com/augustoneto/craftbeer.git
+cd craftbeer
+./mvnw package
+java -jar target/*.jar
+```
+
+## Rodando crafbeer local com Docker
+
+```
+git clone https://github.com/augustoneto/craftbeer.git
+cd craftbeer
+docker build --tag craftbeer-docker .
+docker run -p 9000:9000 craftbeer-docker
+```
+
+Você pode acessar craftbeer aqui: http://localhost:9000/beers
+
+Dentro do repositório existe uma collection do Postman para executar alguns testes: https://github.com/augustoneto/craftbeer/tree/master/postman
+
+## Configuração da Base de Dados
+
+A configuração default usa uma base de dados in-memory (H2) que é populada com dados no startup da aplicação.
+
+## Trabalhando com craftbeer em sua IDE
+
+### Pré-requisito
+Os sequintes itens devem estar instalados em seu sistema:
+* Java 8.
+* git (https://help.github.com/articles/set-up-git)
+* Sua IDE preferida
+  * Eclipse com m2e plugin. https://www.eclipse.org/m2e/
+  * [Spring Tools Suite](https://spring.io/tools) (STS)
+  * IntelliJ IDEA
+  * [VS Code](https://code.visualstudio.com)
+
