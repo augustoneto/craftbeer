@@ -102,3 +102,13 @@ cd craftbeer
 ./mvnw package
 java -jar target/*.jar
 ```
+
+## Rodando crafbeer local com Docker
+
+```
+git clone https://github.com/augustoneto/craftbeer.git
+cd craftbeer
+docker build --tag craftbeer-docker .
+docker run -p 9000:9000 craftbeer-docker
+```
+
