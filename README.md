@@ -94,7 +94,7 @@ Dica: Copie e cole o conteúdo do arquivo acima no [Swagger Editor](https://edit
 
 ## Seção reservada para que você descreva brevemente como executar o seu projeto
 
-## Rodando crafbeer local
+## Rodando craftbeer local
 
 ```
 git clone https://github.com/augustoneto/craftbeer.git
@@ -103,7 +103,7 @@ cd craftbeer
 java -jar target/*.jar
 ```
 
-## Rodando crafbeer local com Docker
+## Rodando craftbeer local com Docker
 
 ```
 git clone https://github.com/augustoneto/craftbeer.git
