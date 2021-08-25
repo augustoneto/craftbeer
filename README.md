@@ -116,3 +116,19 @@ Você pode acessar craftbeer aqui: http://localhost:9000/beers
 
 Dentro do repositório existe uma collection do Postman para executar alguns testes: https://github.com/augustoneto/craftbeer/tree/master/postman
 
+## Configuração da Base de Dados
+
+A configuração default usa uma base de dados in-memory (H2) que é populada com dados no startup da aplicação.
+
+## Trabalhando com craftbeer em sua IDE
+
+### Pré-requisito
+Os sequintes itens devem estar instalados em seu sistema:
+* Java 8.
+* git (https://help.github.com/articles/set-up-git)
+* Sua IDE preferida
+  * Eclipse com m2e plugin. https://www.eclipse.org/m2e/
+  * [Spring Tools Suite](https://spring.io/tools) (STS)
+  * IntelliJ IDEA
+  * [VS Code](https://code.visualstudio.com)
+
