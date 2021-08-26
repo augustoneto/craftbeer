@@ -95,12 +95,19 @@ Dica: Copie e cole o conteúdo do arquivo acima no [Swagger Editor](https://edit
 ## Seção reservada para que você descreva brevemente como executar o seu projeto
 
 ## Rodando craftbeer local
+craftbeer é uma aplicação [Spring Boot](https://spring.io/guides/gs/spring-boot) usando [Maven](https://spring.io/guides/gs/maven/). Você pode fazer um build de um jar file e rodar da linha de comando:
 
 ```
 git clone https://github.com/augustoneto/craftbeer.git
 cd craftbeer
 ./mvnw package
 java -jar target/*.jar
+```
+
+Ou você pode rodar diretamente usanso o Spring Boot Maven plugin. 
+
+```
+./mvnw spring-boot:run
 ```
 
 ## Rodando craftbeer local com Docker
