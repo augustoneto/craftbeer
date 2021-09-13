@@ -146,6 +146,24 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/actuator/health",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
